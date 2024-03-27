@@ -1,0 +1,22 @@
+.calender {
+    .days {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto auto;
+        column-gap: 20px;
+        row-gap: 20px;
+        .day {
+            text-align: center;
+            line-height: 40px;
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            border: 1px solid #eee;
+            &.is-to-day {
+                border: 1px solid red;
+            }
+            &.is-friday {
+                color: red
+            }
+        }
+    }
+}
